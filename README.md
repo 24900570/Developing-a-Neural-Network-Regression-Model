@@ -82,8 +82,8 @@ y_train_tensor = torch.tensor(y_train, dtype=torch.float32).view(-1, 1)
 X_test_tensor = torch.tensor(X_test, dtype=torch.float32)
 y_test_tensor = torch.tensor(y_test, dtype=torch.float32).view(-1, 1)
 
-# Name: VIGNESH 
-# Register Number: 212224230303
+# Name: AJITH A
+# Register Number: 212224230012
 class NeuralNet(nn.Module):
     def __init__(self):
         super().__init__()
@@ -104,8 +104,8 @@ ai_brain = NeuralNet()
 criterion = nn.MSELoss()
 optimizer = optim.RMSprop(ai_brain.parameters(),lr=0.001)
 
-# Name: VIGNESH V
-# Register Number: 212224230303
+# Name: AJITH A
+# Register Number: 212224230012
 def train_model(ai_brain, X_train, y_train, criterion, optimizer, epochs=2000):
     for epoch in range(epochs):
         optimizer.zero_grad()
